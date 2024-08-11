@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CoffeServiceService } from '../coffe-service.service';
 
 @Component({
   selector: 'app-item',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './item.component.css'
 })
 export class ItemComponent {
-
+  itemslists:any = []
+  constructor(private itemsdata: CoffeServiceService){
+    this.itemsdata.getData().subscribe((data:any)=>{
+      this.itemslists = data;
+      console.log(data)
+    })      
+  }
 }

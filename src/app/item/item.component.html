@@ -1,1 +1,9 @@
-<p>item works!</p>
+<div class="container">
+  <div class="item" *ngFor="let itm of itemslists">
+    <img src="{{ itm.image }}" alt="{{ itm.title }}" />
+    <div class="descri">
+      <h4>{{ itm.title }}</h4>
+      <label>{{ itm.description }}</label>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,55 @@
+<footer>
+  <div *ngIf="isabout; then about "></div>
+  <ng-template #about>
+    <section id="about-us" class="about-us">
+      <div class="container">
+        <h2>About Us</h2>
+
+        <div class="about-content">
+          <div class="about-intro">
+            <h3>Our Story</h3>
+            <p>
+              Welcome to [Your Company Name], your number one source for
+              [products/services]. We're dedicated to giving you the very best
+              of [product/service], with a focus on quality, customer service,
+              and uniqueness.
+            </p>
+          </div>
+
+          <div class="about-mission">
+            <h3>Our Mission</h3>
+            <p>
+              Our mission is to provide our customers with the best shopping
+              experience by offering high-quality products and excellent
+              customer service, while continuously innovating and improving our
+              offerings.
+            </p>
+          </div>
+
+          <div class="about-team">
+            <h3>Meet the Team</h3>
+            <p>
+              Our team is a group of dedicated professionals with a shared
+              passion for [industry/field]. Together, we work hard to bring you
+              the best products and customer service. We are here to support you
+              every step of the way!
+            </p>
+          </div>
+
+          <div class="about-history">
+            <h3>Our History</h3>
+            <p>
+              [Your Company Name] was founded in [Year] by [Founder's Name],
+              with a vision to [describe the founding vision or goal]. Since
+              then, we've grown from a small operation to a leading company in
+              [industry/field], serving customers all over [country/world].
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </ng-template>
+  <div id="buttom" tabindex="0" role="button">
+    <h3>&#64;copyright</h3>
+  </div>
+</footer>

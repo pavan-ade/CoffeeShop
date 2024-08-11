@@ -7,12 +7,18 @@ import { ItemsComponent } from './items/items.component';
 import { ItemComponent } from './item/item.component';
 import { CoffeServiceService } from './coffe-service.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './footer/footer.component';
+import { SearchComponent } from './search/search.component';
+import { TopNavComponent } from './top-nav/top-nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ItemsComponent,
-    ItemComponent
+    ItemComponent,
+    FooterComponent,
+    SearchComponent,
+    TopNavComponent
   ],
   imports: [
     BrowserModule,

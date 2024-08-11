@@ -1,0 +1,39 @@
+<div class="topnav">
+  <button >Home🏠</button>
+  <button (click)="LoginHere()">Login</button>
+  <button>About</button>
+  <button (mousemove)="contactDetails()">Contact</button>
+</div>
+<div>
+  <div *ngIf="iscontact; then contact"></div>
+  <div *ngIf="islogin; then login"></div>
+</div>
+<ng-template #contact class="popup">
+  <div class="popup-content">
+    <span class="close-button" (mouseover)="closeDetaiks()">&times;</span>
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p><strong>Address:</strong> 1234 Market Street, City, Country</p>
+      <p><strong>Phone:</strong> (123) 456-7890</p>
+      <p><strong>Email:</strong> support&#64;example.com</p>
+      <p><strong>Business Hours:</strong> Mon-Fri, 9 AM - 6 PM</p>
+    </div>
+  </div>
+</ng-template>
+<ng-template #login>
+  <div class="login-form">
+    <span class="close-button" (mouseover)="closeDetaiks()">&times;</span>
+    <h3>Login form</h3>
+    <form action="/CofeeShop/src/app/items/items.component.html">
+      <div>
+        <label for="username">User Name</label>
+        <input type="text" name="username" id="username" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <button>Submit</button>
+    </form>
+  </div>
+</ng-template>
